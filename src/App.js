@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Store from './Store';
+import RobotList from './components/RobotList'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Store>
+      <header>
+        <h3>This is the header</h3>
       </header>
-    </div>
+      <p>
+        Robot Hanger will go here
+        <RobotList  />
+      </p>
+    </Store>
   );
 }
 
