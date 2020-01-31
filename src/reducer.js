@@ -3,7 +3,7 @@ const Reducer=(state, action)=>{
         case 'SET_ALL_ROBOTS':
             return{
                 ...state,
-                allrobots: action.payload
+                allRobots: action.payload
             };
         case 'ADD_ROBOT':
             return{
