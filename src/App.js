@@ -8,7 +8,7 @@ function App() {
     <Store>
       <main>
         <header>
-          <h3>This is the header</h3>
+          <h3>Create Your Robot Team</h3>
         </header>
         <div>
           Robot Hanger will go here

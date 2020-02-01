@@ -6,7 +6,7 @@ const RobotCard=(props)=>{
 
     return(
         <section>
-            <h4>Robot Name: </h4>
+            <h4>Robot Name: {props.robotObj.firstname} {props.robotObj.lastname} </h4>
 
         </section>
     )
