@@ -6,13 +6,15 @@ import RobotList from './components/RobotList'
 function App() {
   return (
     <Store>
-      <header>
-        <h3>This is the header</h3>
-      </header>
-      <p>
-        Robot Hanger will go here
-        <RobotList  />
-      </p>
+      <main>
+        <header>
+          <h3>This is the header</h3>
+        </header>
+        <div>
+          Robot Hanger will go here
+          <RobotList  />
+        </div>
+      </main>
     </Store>
   );
 }

@@ -11,7 +11,10 @@ const RobotList=()=>{
     }, []);
 
     return(
-        <p>the robot list will populate here</p>
+        <section>
+            <h3>Choose from this list of robots: </h3>
+
+        </section>
     );
 };
 
