@@ -9,19 +9,14 @@ const RobotList=()=>{
 
     useEffect(()=>{
         console.log("hit dispatch form robotlist")
-        dispatch({type: 'SET_ALL_ROBOTS', payload: robotData})
+        dispatch({type: 'SET_ALL_ROBOTS', payload: robotData.robots})
     }, []);
 
-    // const displayRobotCards=()=>{
-    //     console.log("hit displayRobotCards", state.robotHanger[0])
-    //     return state.robotHanger.map((robotObj)=>{
-    //         return <RobotCard key={robotObj.id} robotObj={robotObj} />
-    //     })
-    // }
-
+  
     function displayRobotCards(){
-        console.log("hit displayRobotCards", state.robotHanger[0])
-        return state.robotHanger.map((robotObj)=>{
+        console.log("hit displayRobotCards", state)
+        return state.allRobots.map((robotObj)=>{
+            console.log("robot card id", robotObj.id)
             return <RobotCard key={robotObj.id} robotObj={robotObj} />
         })
     }
