@@ -1,3 +1,5 @@
+
+
 const Reducer=(state, action)=>{
     switch(action.type){
         case 'SET_ALL_ROBOTS':
@@ -13,9 +15,8 @@ const Reducer=(state, action)=>{
         case 'REMOVE_ROBOT':
             return{
                 ...state,
-                robotHanger: state.robotHanger.filter((robot)=>{
-                    robot.id !== action.payload
-                })
+                robotHanger: state.robotHanger.filter((robot)=>
+                    { return robot.id !== action.payload })
             };
         default:
             return state;
