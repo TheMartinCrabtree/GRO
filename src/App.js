@@ -8,13 +8,26 @@ function App() {
 
   return (
     <Store>
-      <main>
-        <header>
-          <h3>Create Your Robot Team:</h3>
-        </header>
-        <div>
-          Robot Hanger will go here
-          <RobotList  />
+      <main className="Main">
+        <div className="grid-container" >
+          <div className="item1">
+            <header>
+              <h3>Create Your Robot Team:</h3>
+            </header>
+          </div>
+          <div className="item2">
+            Robot Hanger will go here
+            <RobotList  />
+          </div>
+          <div className="item3">
+            <h3>Main Article</h3>
+          </div>
+          <div className="item5">
+            <footer>
+              <h5>footer</h5>
+            </footer>
+          </div>
+
         </div>
       </main>
     </Store>
