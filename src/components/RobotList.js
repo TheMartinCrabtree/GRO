@@ -8,7 +8,7 @@ const RobotList=()=>{
     const [state, dispatch] = useContext(Context);
 
     useEffect(()=>{
-        console.log("hit dispatch form robotlist")
+        // console.log("hit dispatch form robotlist")
         dispatch({type: 'SET_ALL_ROBOTS', payload: robotData.robots})
     }, []);
 
@@ -16,7 +16,7 @@ const RobotList=()=>{
     function displayRobotCards(){
         console.log("hit displayRobotCards", state)
         return state.allRobots.map((robotObj)=>{
-            console.log("robot card id", robotObj.id)
+            // console.log("robot card id", robotObj.id)
             return <RobotCard key={robotObj.id} robotObj={robotObj} />
         })
     }

@@ -14,6 +14,7 @@ const Store=({children})=>{
             { children }
         </Context.Provider>
     );
+    
 };
 
 export const Context = createContext(initialState);
