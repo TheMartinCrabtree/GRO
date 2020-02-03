@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import './App.css';
 import Store, { Context } from './Store';
-import RobotList from './components/RobotList'
+import RobotList from './components/RobotList';
+import MainHud from './components/MainHud';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
           </div>
           <div className="item3">
             <h3>Main Article</h3>
+            <MainHud />
           </div>
           <div className="item5">
             <footer>
