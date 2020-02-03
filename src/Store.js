@@ -1,5 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import Reducer from './Reducer';
+// TO BE USED AS A GLOBAL CONTEXT
+
 
 const initialState = {
     allRobots: [],
