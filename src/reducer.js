@@ -1,4 +1,4 @@
-
+// HANDLES POPULATING STATE WITH MASTER ROBOT LIST, AND ADDING/REMOVING ROBOTS THAT WERE SELECTED
 
 const Reducer=(state, action)=>{
     console.log("reducer checking action payload", action.payload)
